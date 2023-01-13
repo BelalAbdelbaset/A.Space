@@ -1,0 +1,244 @@
+:root{
+    --blue-color: #2196f3;
+    --brown-color:#f0e2c5;
+    --red-color: #ff3150;
+    --yellow-color: #ffc400;
+    --section-color: #f8f6ed;
+    --transition: 0.5s ease-in;;
+    --social-media-transform: rotate(360deg)scale(1.3);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: "cairo" , sans-serif;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  height: 10000px;
+}
+/* Start constants */
+a{
+  text-decoration: none;
+}
+.up{
+  color: var(--green-color);
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 999;
+}
+.up:hover{
+  color: var(--red-color);
+  transition:0.7s;
+}
+.main-title{
+  position: relative;
+  display: flex;
+  justify-content:center;
+  color:var(--blue-color);
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+}
+.main-title::before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  background-color:var(--yellow-color);
+  bottom: -30px;
+  width: 160px;
+  margin-bottom: 20px;
+}
+.main-title::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 18px;
+  width: 18px;
+  border-radius:50% ;
+  border: 1px solid black;
+  background-color:white;
+  bottom: -36px;
+  margin-bottom: 20px;
+}
+.about-btn{
+  background-color: var(--dark-color);
+  border: 1px solid rgb(113, 111, 111);
+  border-radius: 5px;
+  color: white;
+  padding: 7px 25px;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 1px 5px 15px black;
+  transition: var(--transition);
+}
+.about-btn:hover{
+  color: white;
+  background-color:var(--dark-color);
+  transform: translateY(10px) scale(1.1);
+  box-shadow: none;
+}
+/* End constants */
+
+/* start navbar */
+.navbar .logo {
+  color: white;
+  border-right: 1px solid white ;
+  padding-left:20px ;
+  transition: 0.7s;
+}
+.navbar .logo:hover{
+  background-color: var(--brown-color);
+  border-radius: 20px;
+  color: #07152a;
+}
+.navbar img {
+  width: 40px;
+  height: 40px;
+}
+.navbar .navbar-toggler{
+    font-size:30px ;
+    color:#eff7fa ;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar .links > li > a {
+  position: relative;
+  transition: 0.7s;
+  overflow: hidden;
+  color: white;
+}
+
+.navbar .links > li > a::before {
+  content: "";
+  position: absolute;
+  width:calc(100% - 15px) ;
+  height:100%;
+  background-color: var(--blue-color);
+  bottom: 100%;
+  border-radius: 0px 0px 10px 10px;
+  transition: 0.5s;
+  z-index: -1;
+}
+.navbar .links > li > a:hover::before{
+  bottom: 0%;
+}
+/* End navbar */
+
+/* Start Landing */
+.landing .content{
+  height:100vh ;
+}
+.landing .content video{
+  object-fit: cover;
+  pointer-events: none;
+}
+.landing .content .text{
+  z-index: 1;
+
+}
+.landing .content .text h1{
+  font-family:cursive ;
+  color: #fff;
+  font-size: 4.5em;
+  font-weight: 900;
+}
+.landing .content .text p{
+  font-family:cursive;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight:300;
+}
+/* End landing */
+/*Start sec-2*/
+.about-space{
+  background-color: #03021d;
+  height: 100vh;
+}
+/*End sec-2*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start Footer */
+.footer{
+  background-color:#000;
+}
+.footer .facebook{
+  color:#1877f2 ;
+  transition:var(--transition);
+}
+.footer .facebook:hover{
+  transform: var(--social-media-transform);
+  border: 1px solid #1877f2;
+}
+.footer .twitter{
+  color:#1da1f2 ;
+  transition:var(--transition);
+} 
+.footer .twitter:hover{
+  transform: var(--social-media-transform);
+  border: 1px solid #1da1f2;
+}
+.footer .linkedin{
+  color: #0077b5;
+  transition:var(--transition);
+}
+.footer .linkedin:hover{
+  transform: var(--social-media-transform);
+  border: 1px solid #0077b5;
+}
+.footer .youtube{
+  color:#ff0000 ;
+  transition:var(--transition);
+}
+.footer .youtube:hover{
+  transform: var(--social-media-transform);
+  border: 1px solid #ff0000;
+}
+.footer .github{
+  color:#f5f5f5 ;
+  transition:var(--transition);
+}
+.footer .github:hover{
+  transform: var(--social-media-transform);
+  border: 1px solid #f5f5f5;
+}
+@media (max-width:768px) {
+ .footer-image{
+  display: none;
+}
+}
+.footer .links a{
+  color:var(--yellow-color);
+}
+.footer .links a:hover{
+  color:white;
+
+}
+
+/* End Footer */

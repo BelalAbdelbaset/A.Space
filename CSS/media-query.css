@@ -1,0 +1,45 @@
+
+
+/*`sm` applies to x-small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px)
+ {
+    .navbar .links > li > a::before{
+        display: none;
+      }
+    .navbar .logo img{
+        display: none;
+      }
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) 
+{
+    .landing .content .text h1{
+        color: #fff;
+        font-size: 3.5em;
+        font-weight: 900;
+      }
+      .landing .content .text p{
+        color: #fff;
+        font-size: 1.2em;
+        font-weight:300;
+}
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) 
+{
+    .navbar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between
+    }
+    .navbar .logo {
+        display: none;
+      }
+    .navbar .logo img{
+        border: none;
+        display: none;
+    }
+}
+
